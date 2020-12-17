@@ -1,7 +1,6 @@
 ![title](doc/title.png)
 
-Yao Fu, Chuanqi Tan, Mosha Chen, Songfang Huang and Fei Huang. _Nested Named Entity Recognition with Partially Observed TreeCRFs_. AAAI 2021
-
+Yao Fu, Chuanqi Tan, Mosha Chen, Songfang Huang and Fei Huang. _Nested Named Entity Recognition with Partially Observed TreeCRFs_. AAAI 2021. [[arxiv](https://arxiv.org/abs/2012.08478)]
 
 
 Train:
