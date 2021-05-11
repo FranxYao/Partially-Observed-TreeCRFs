@@ -8,9 +8,15 @@ Dependency:
 * [torch-struct](https://github.com/harvardnlp/pytorch-struct)
 * [transformers](https://github.com/huggingface/transformers)
 
+Genia Data copied from [here](https://gitlab.com/sutd_nlp/overlapping_mentions/-/tree/master/data/GENIA/scripts). POS tag is not used 
+
+ACE 04 and 05 is not open-sourced from [LDC](https://catalog.ldc.upenn.edu/LDC2005T09)
+
+Apologies for being super late about the data! 
+
 Train:
 ```bash
-python train.py --output_dir outputs --model_type bert --config_name bert-base-uncased --model_name_or_path bert-base-uncased --train_file data/train.data --predict_file data/dev.data --test_file data/test.data --max_seq_length 64 --per_gpu_train_batch_size 48 --per_gpu_eval_batch_size 48 --do_train --do_predict --learning_rate 3e-5 --num_train_epochs 100 --overwrite_output_dir --save_steps 1000 --dataset GENIA --potential_normalization True --structure_smoothing_p 0.98 --parser_type deepbiaffine --latent_size 1 --seed 12345
+python train.py --output_dir outputs --model_type bert --config_name bert-base-uncased --model_name_or_path bert-base-uncased --train_file data/genia/train.data --predict_file data/genia/dev.data --test_file data/genia/test.data --max_seq_length 64 --per_gpu_train_batch_size 48 --per_gpu_eval_batch_size 48 --do_train --do_predict --learning_rate 3e-5 --num_train_epochs 100 --overwrite_output_dir --save_steps 1000 --dataset GENIA --potential_normalization True --structure_smoothing_p 0.98 --parser_type deepbiaffine --latent_size 1 --seed 12345
 ```
 
 Test:
