@@ -37,11 +37,6 @@ from transformers import AdamW, get_linear_schedule_with_warmup
 from transformers import (WEIGHTS_NAME, BertConfig,
                           BertForTokenClassification, BertTokenizer)
 
-# from pytorch_transformers import (WEIGHTS_NAME, BertConfig,
-#                                   BertForTokenClassification, BertTokenizer)
-
-# from pytorch_transformers import AdamW, WarmupLinearSchedule
-
 from utils_ner import Processor, eval
 
 from model import PartialPCFG

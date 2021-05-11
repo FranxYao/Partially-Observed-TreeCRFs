@@ -75,7 +75,7 @@ class Processor(DataProcessor):
             raise NotImplementedError()
 
         if dataset == "ACE05" or dataset == "GENIA" or dataset == "ACE04":
-            self.interval = 3
+            self.interval = 4
         else:
             raise NotImplementedError()
 
@@ -103,7 +103,7 @@ class Processor(DataProcessor):
 
         for i in range(0, len(lines), self.interval):
             text_a = lines[i]
-            label = lines[i + 1]
+            label = lines[i + 2]
 
             examples.append(
                 InputExample(guid=len(examples), text_a=text_a, pos=None, label=label))

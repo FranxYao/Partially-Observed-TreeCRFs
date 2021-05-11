@@ -2,7 +2,7 @@ import torch
 import torch.nn.functional as F
 import torch_model_utils as tmu
 
-from transformers.modeling_bert import BertPreTrainedModel, BertModel
+from transformers import BertPreTrainedModel, BertModel
 from torch import nn
 
 from tree_crf_layer import TreeCRFLayer
